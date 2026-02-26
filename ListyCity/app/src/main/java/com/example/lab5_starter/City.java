@@ -6,13 +6,25 @@ import java.io.Serializable;
 public class City implements Serializable {
 
     // attributes
+    private String id;
     private String name;
     private String province;
 
     // constructor
+    public City() {
+    }
+
     public City(String name, String province) {
         this.name = name;
         this.province = province;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getProvince() {
